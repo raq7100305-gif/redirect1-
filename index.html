@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Niche line mein google.com ki jagah apna naya link dalein -->
+    <meta http-equiv="refresh" content="6;url=https://omg10.com/4/8755124">
+    <title>Redirecting...</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding-top: 100px; background: #f4f4f4; }
+        .box { background: white; padding: 30px; display: inline-block; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+        #timer { font-weight: bold; color: #ff4757; font-size: 24px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Aapko naye page par redirect kiya ja raha hai...</h2>
+        <p>Kripya <span id="timer">6</span> seconds intezar karein.</p>
+        <!-- Niche line mein bhi apna naya link dalein -->
+        <p>Agar nahi hota, toh <a href="https://google.com">yahan click karein</a>.</p>
+    </div>
+    <script>
+        let count = 6;
+        const timer = document.getElementById('timer');
+        setInterval(() => {
+            count--;
+            if(count >= 0) timer.textContent = count;
+        }, 1000);
+    </script>
+</body>
+</html>
